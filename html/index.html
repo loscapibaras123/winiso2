@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Winiso Skincare</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
+
+<header>WINISO - Skincare Coreano</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Limpiador Facial</h3>
+    <p class="price">S/ 40</p>
+    <button onclick="comprar('WIN001','Limpiador Facial',40)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h3>Serum Vitamina C</h3>
+    <p class="price">S/ 90</p>
+    <button onclick="comprar('WIN002','Serum Vitamina C',90)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h3>Crema Hidratante</h3>
+    <p class="price">S/ 80</p>
+    <button onclick="comprar('WIN003','Crema Hidratante',80)">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h3>Protector Solar</h3>
+    <p class="price">S/ 70</p>
+    <button onclick="comprar('WIN004','Protector Solar',70)">Comprar</button>
+  </div>
+
+</div>
+
+<div class="barcode-box">
+  <h2>Código de barras</h2>
+  <svg id="barcode"></svg>
+  <br><br>
+  <button onclick="descargarBarcode()">Descargar código</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
